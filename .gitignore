@@ -1,6 +1,15 @@
 */
 
 !neovim/
+!kitty/
+
+!hypr/
+!systemd/
+!waybar/
+!yay/
+!rofi/
+
+
 trashrc
 mimeapps.list
 dolphinrc
