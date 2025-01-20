@@ -1,13 +1,15 @@
 */
 
-!neovim/
-!kitty/
+!neovim/*
+!kitty/*
+!alacritty/
+!alacritty/alacritty-config/
 
-!hypr/
-!systemd/
+!hypr/*
+!systemd/*
 !waybar/
-!yay/
-!rofi/
+!yay/*
+!rofi/*
 
 
 trashrc

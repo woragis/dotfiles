@@ -2,8 +2,43 @@
 	border: none;
 	border-radius: 10;
     	font-family: "JetbrainsMono Nerd Font";
+	font-weight: bold;
 	font-size: 14px;
 	min-height: 20px;
+}
+
+tooltip {
+	background: #1e1e2e;
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #11111b;
+}
+
+#workspaces button {
+	padding: 5px;
+	color: #313244;
+	margin-right: 5px;
+}
+
+#workspaces button.active {
+	color: #a6adc8;
+}
+
+#workspaces button.focused {
+	color: #a6adc8;
+}
+
+#workspaces button.urgent {
+	color: #11111b;
+	background: #a6e3a1;
+	border-radius: 10px;
+}
+
+#workspaces button:hover {
+	color: #11111b;
+	background: #cdd6f4;
+	border-radius: 10px;
 }
 
 window#waybar {

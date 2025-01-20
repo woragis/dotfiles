@@ -1,22 +1,25 @@
 // -*- mode: jsonc -*-
 {
-    // "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "mod": "dock",
     "height": 30,
     "spacing": 4,
     "modules-left": [
-        "sway/workspaces",
-        "sway/mode",
+	"clock",
+        "hyprland/workspaces",
+        // "sway/mode",
         "sway/scratchpad",
         "custom/media"
     ],
     "modules-center": [
-        "sway/window"
+        "hyprland/window"
     ],
     "modules-right": [
         "mpd",
         "idle_inhibitor",
         "pulseaudio",
+        "pulseaudio#microphone",
         "network",
         "power-profiles-daemon",
         "cpu",
@@ -27,13 +30,12 @@
         "sway/language",
         "battery",
         "battery#bat2",
-        "clock",
         "tray",
         "custom/power"
     ],
     // Modules configuration
-     "sway/workspaces": {
-         "disable-scroll": true,
+     "hyprland/workspaces": {
+         "disable-scroll": false,
          "all-outputs": true,
          "warp-on-scroll": false,
          "format": "{name}: {icon}",
@@ -46,7 +48,19 @@
              "urgent": "",
              "focused": "",
              "default": ""
-         }
+         },
+	 "persistent_workspaces": {
+		 "1": [],
+		 "2": [],
+		 "3": [],
+		 "4": [],
+		 "5": [],
+		 "6": [],
+		 "7": [],
+		 "8": [],
+		 "9": [],
+		 "0": []
+	 }
      },
     "keyboard-state": {
         "numlock": true,
@@ -56,6 +70,15 @@
             "locked": "",
             "unlocked": ""
         }
+    },
+    "hyprland/window": {
+	"format": "{}"
+    },
+    "hyprland/workspaces": {
+	"disable-scroll": true,
+	"all-outputs": true,
+	"on-click": "activate",
+	"format": "{icon}"
     },
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
@@ -185,6 +208,33 @@
             "default": ["", "", "", ""]
         },
         "exec": "pw-volume status"
+    },
+    "pulseaudio": {
+	"format": "{icon} {volume}%",
+	"tooltip": false,
+	"format-muted": "Muted",
+	"on-click": "pamixer -t",
+	"on-scroll-up": "pamixer -i 5",
+	"on-scroll-down": "pamixer -d 5",
+	"scroll-step": 5,
+	"format-icons": {
+		"headphone": "",
+		"hands-free": "",
+		"headset": "",
+		"phone": "",
+		"portable": "",
+		"car": "",
+		"default": ["", "", ""]
+	}
+    },
+    "pulseaudio#microphone": {
+	"format": "{format_source}",
+	"format-source": "{volume}%",
+	"format-source-muted": "Muted",
+	"on-click": "pamixer --default-source -t",
+	"on-scroll-up": "pamixer --default-source -i 5",
+	"on-scroll-down": "pamixer --defaul-source -d 5",
+	"scroll-step": 5
     },
     "custom/media": {
         "format": "{icon} {}",
