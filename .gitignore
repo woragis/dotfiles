@@ -1,18 +1,14 @@
-*/
+/*
 
-!neovim/*
-!kitty/*
+# Code Editor
+!nvim/
+
+# Terminals
+!kitty/
 !alacritty/
-!alacritty/alacritty-config/
 
-!hypr/*
-!systemd/*
+!hypr/
+!systemd/
 !waybar/
-!yay/*
-!rofi/*
-
-
-trashrc
-mimeapps.list
-dolphinrc
-QtProject.conf
+!yay/
+!rofi/
