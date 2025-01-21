@@ -4,6 +4,7 @@
   font-family: "JetbrainsMono Nerd Font";
   font-size: 14px;
   min-height: 30px;
+  transition: 100ms;
 }
 
 tooltip {
