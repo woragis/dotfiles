@@ -12,3 +12,7 @@
 !waybar/
 !yay/
 !rofi/
+
+# Sound
+!pipewire/
+
