@@ -1,0 +1,28 @@
+
+[font.bold]
+family = "Jetbrains Mono Nerd Font"
+style = "bold"
+
+[font.italic]
+family = "Jetbrains Mono Nerd Font"
+style = "italic"
+
+[font.normal]
+family = "Jetbrains Mono Nerd Font"
+style = "regular"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "Return"
+mods = "Super|Shift"
+
+[terminal.shell]
+program = "/usr/bin/bash"
+
+[window]
+opacity = 0.1
+
+[general]
+live_config_reload = true
+
+[terminal]

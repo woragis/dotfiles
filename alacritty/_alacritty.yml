@@ -1,0 +1,28 @@
+font:
+  normal:
+    family: Jetbrains Mono Nerd Font
+    style: regular
+  bold:
+    family: Jetbrains Mono Nerd Font
+    style: bold
+  italic:
+    family: Jetbrains Mono Nerd Font
+    style: italic
+
+window:
+  opacity: 0.1
+live_config_reload: true
+shell:
+  program: /usr/bin/fish
+key_bindings:
+  - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
+ipc_socket: true
+
+# Your preferred terminal emulator
+set $term alacritty
+
+# Start a terminal
+bindsym $mod+Return exec $term
+
+set $term alacritty msg create-window
+
