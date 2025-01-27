@@ -6,6 +6,7 @@
 # Terminals
 !kitty/
 !alacritty/
+!fish/
 
 !hypr/
 !systemd/
