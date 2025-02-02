@@ -1,0 +1,32 @@
+import:
+  - ~/.config/alacritty/themes/themes/xterm.yaml
+window:
+  padding:
+    x: 5 
+    y: 0
+font:
+  normal:
+    family: JetBrains Mono
+    style: Regular
+  bold:
+    family: JetBrains Mono
+    style: Bold
+  italic:
+    family: JetBrains Mono
+    style: Italic
+      #font:
+      #  normal:
+      #    family: JetBrains Mono
+      #    style: Regular
+      #  bold:
+      #    family: JetBrains Mono
+      #    style: Bold
+      #  italic:
+      #    family: JetBrains Mono
+      #    style: RegularItalic
+      #  bold_italic:
+      #    family: JetBrains Mono
+      #    style: BoldItalic 
+      #  size: 15
+draw_bold_text_with_bright_colors: true
+
