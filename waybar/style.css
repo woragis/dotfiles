@@ -2,8 +2,8 @@
   border: none;
   border-radius: 10;
   font-family: "JetbrainsMono Nerd Font";
-  font-size: 14px;
-  min-height: 30px;
+  font-size: 12px;
+  min-height: 12px;
   transition: 100ms;
 }
 
@@ -122,12 +122,12 @@ window#waybar.hidden {
 #battery.critical:not(.charging),
 #pulseaudio,
 #network {
-  margin-top: 5px;
+  margin-top: 1px;
+  margin-bottom: 1px;
   margin-left: 0px;
   margin-right: 0px;
   padding-left: 10px;
   padding-right: 10px;
-  margin-bottom: 5px;
   border-radius: 0px;
   transition: none;
   color: #ffffff;
