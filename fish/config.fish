@@ -34,7 +34,6 @@ alias gd='git diff'
 alias vim='nvim'
 alias v='vim'
 alias nv='vim'
-alias .='nv .'
 
 # Copy alias
 alias cp='cp -i'
