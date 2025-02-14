@@ -1,5 +1,5 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+  fastfetch
 end
 
 # Utils alias
@@ -23,6 +23,7 @@ alias gs='git status'
 alias ga='git add'
 alias gaa='git add --all'
 alias gc='git commit -m'
+alias gl='git log --oneline'
 alias gac='git commit -am'
 alias gb='git branch'
 alias gps='git push'
