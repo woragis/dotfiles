@@ -7,6 +7,11 @@
   transition: 100ms;
 }
 
+window#waybar {
+  background: #393556;
+  border-radius: 12px;
+}
+
 tooltip {
   background: #1e1e2e;
   border-radius: 10px;
@@ -40,11 +45,6 @@ tooltip {
   color: #11111b;
   background: #cdd6f4;
   border-radius: 10px;
-}
-
-window#waybar {
-  background: transparent;
-  border-radius: 0;
 }
 
 window#waybar.hidden {
