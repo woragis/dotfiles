@@ -1,5 +1,4 @@
 if status is-interactive
-  fastfetch
 end
 
 # Utils alias
