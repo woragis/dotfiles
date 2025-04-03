@@ -3,14 +3,13 @@
   border-radius: 10;
   font-family: "JetbrainsMono Nerd Font";
   font-size: 10px;
-  min-height: 26px;
-  transition: 200ms;
+  min-height: 10px;
+  transition: 100ms;
 }
 
 window#waybar {
-  background: #393556;
+  background: rgba(57,53,86,0.8);
   border-radius: 12px;
-  margin: 5px;
 }
 
 tooltip {
@@ -22,39 +21,39 @@ tooltip {
   margin: 0px;
 }
 
+#workspaces {
+}
+
 #workspaces button {
-  font-size: 26px;
+  font-size: 16px;
   padding: 2px 10px;
   color: #ffffff;
-  margin-right: 5px;
+  border-color: #211F36;
+  border-width: 3px;
+  border-style: solid;
   padding-left: 5px;
-  box-shadow: #211F36 6px 6px 0px, inset #ffffff 1px 1px 2px;
+  box-shadow: #211F36 3px 3px 0px;
   margin: 10px 5px;
 }
 
 #workspaces button.active {
-  box-shadow: #211F36 6px 6px 5px inset, #ffffff 1px 1px 2px;
+  color: #93d211;
 }
 
 #workspaces button.focused {
-  color: #11111b;
+  color: #0ff;
+  box-shadow: #211F36 6px 6px 5px inset, #ffffff 1px 1px 2px;
+  transition: 200ms;
 }
 
 #workspaces button.urgent {
-  color: #11111b;
-  background: #a6e3a1;
-  border-radius: 5px;
-  color: #11111b;
-  background: #cdd6f4;
-  border-radius: 10px;
+  color: #f00;
 }
 
 #workspaces button:hover {
-  color: #11111b;
   background: #cdd6f4;
-  border-radius: 10px;
-  border: none;
   background: #211F36;
+  background: #444444;
 }
 
 window#waybar.hidden {
@@ -67,8 +66,12 @@ window#waybar.hidden {
   padding-right: 10px;
   border-radius: 10px;
   transition: none;
-  color: #ffffff;
   background: transparent;
+}
+#window * {
+  color: #211F36;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 #tags {
@@ -103,12 +106,6 @@ window#waybar.hidden {
 }
 
 #tags button:hover {
-  transition: none;
-  box-shadow: inherit;
-  text-shadow: inherit;
-  color: #fae3b0;
-  border-color: #e8a2af;
-  color: #e8a2af;
 }
 
 #tags button.focused:hover {
@@ -132,21 +129,25 @@ window#waybar.hidden {
 #battery.critical:not(.charging),
 #pulseaudio,
 #network {
-  margin-top: 1px;
-  margin-bottom: 1px;
+  margin-top: -2px;
+  margin-bottom: -2px;
   margin-left: 0px;
   margin-right: 0px;
+  padding-top: 0;
+  padding-bottom: 0;
   padding-left: 10px;
   padding-right: 10px;
-  border-radius: 0px;
+  border-radius: 10px;
   transition: none;
   color: #ffffff;
   background: transparent;
+  border: 1px solid #444444;
 }
 
 #custom-power {
   padding-right: 3px;
 }
+
 #battery.critical:not(.charging) {
   animation-name: blink;
   animation-duration: 0.5s;
@@ -164,13 +165,14 @@ window#waybar.hidden {
 
 #tray {
   color: #b5e8e0;
+  color: #0f0;
 }
 
 #custom-launcher {
-  font-size: 24px;
+  font-size: 10px;
   color: #89dceb;
 }
 
 #custom-power {
-  font-size: 20px;
+  font-size: 10px;
 }
