@@ -2,8 +2,8 @@
   border: none;
   border-radius: 10;
   font-family: "JetbrainsMono Nerd Font";
-  font-size: 10px;
-  min-height: 10px;
+  font-size: 8px;
+  min-height: 0px;
   transition: 100ms;
 }
 
@@ -75,9 +75,9 @@ window#waybar.hidden {
 }
 
 #tags {
-  margin-top: 6px;
+  margin-top: 0px;
   margin-left: 12px;
-  font-size: 4px;
+  font-size: 40px;
   margin-bottom: 0px;
   border-radius: 10px;
   background: #161320;
@@ -88,7 +88,7 @@ window#waybar.hidden {
   transition: none;
   color: #b5e8e0;
   background: transparent;
-  font-size: 52px;
+  font-size: 12px;
   border-radius: 2px;
 }
 
@@ -129,19 +129,21 @@ window#waybar.hidden {
 #battery.critical:not(.charging),
 #pulseaudio,
 #network {
-  margin-top: -2px;
-  margin-bottom: -2px;
+  margin-top: -1px;
+  margin-bottom: 0px;
   margin-left: 0px;
   margin-right: 0px;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
   border-radius: 10px;
   transition: none;
-  color: #ffffff;
+  color: #f8dfff;
   background: transparent;
-  border: 1px solid #444444;
+  border-width: 5px;
+  box-shadow: #000 2px 2px 8px inset;
+  font-size: 12px;
 }
 
 #custom-power {
