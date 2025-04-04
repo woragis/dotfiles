@@ -2,7 +2,7 @@
   border: none;
   border-radius: 10;
   font-family: "JetbrainsMono Nerd Font";
-  font-size: 5px;
+  font-size: 18px;
   min-height: 0px;
   transition: 100ms;
 }
@@ -21,7 +21,7 @@ tooltip {
   margin: 0px;
 }
 
-#workspaces button  *{
+#workspaces button * {
   font-size: 10px;
 }
 
