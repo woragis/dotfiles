@@ -56,6 +56,12 @@ alias egrep='egrep --color=auto'
 # Coding alias
 alias nrd='npm run dev'
 alias nrb='npm run build'
+alias yrd='yarn run dev'
+alias yrb='yarn run build'
+alias brd='bun run dev'
+alias bb='bun run build'
+alias bs='bun start'
+alias bbs='bun run build && bun start'
 
 # Docker alias
 alias dcmp='docker-compose'
