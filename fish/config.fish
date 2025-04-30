@@ -31,7 +31,6 @@ alias gcl='git clone'
 alias gd='git diff'
 
 # Editor alias
-alias vim='nvim'
 alias v='vim'
 alias nv='vim'
 
@@ -51,3 +50,6 @@ alias nrb='npm run build'
 # Docker alias
 alias dcmp='docker-compose'
 
+
+# Created by `pipx` on 2025-04-24 02:45:18
+set PATH $PATH /home/woragis/.local/bin
