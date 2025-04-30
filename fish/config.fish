@@ -30,6 +30,16 @@ alias gpl='git pull'
 alias gcl='git clone'
 alias gd='git diff'
 
+# CD alias
+abbr -a ...   '../..'
+abbr -a ....  '../../..'
+abbr -a ..... '../../../..'
+abbr -a ...... '../../../../..'
+abbr -a ....... '../../../../../..'
+abbr -a ........ '../../../../../../..'
+abbr -a ......... '../../../../../../../..'
+abbr -a .......... '../../../../../../../../..'
+
 # Editor alias
 alias v='vim'
 alias nv='vim'
@@ -53,3 +63,4 @@ alias dcmp='docker-compose'
 
 # Created by `pipx` on 2025-04-24 02:45:18
 set PATH $PATH /home/woragis/.local/bin
+
