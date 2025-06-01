@@ -2,8 +2,8 @@
 
 !README.md
 
-# Code Editor
-!nvim/
+# System
+!systemd/
 
 # Terminals
 !kitty/
@@ -11,6 +11,10 @@
 !fish/
 !warp-terminal/
 
+# Code Editor
+!nvim/
+
+# Hyprland
 !hypr/
 !waybar/
 !yay/
