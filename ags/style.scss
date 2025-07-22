@@ -1,0 +1,104 @@
+// ~/.config/ags/style.scss
+
+@use 'scss/_variables'; // Corrected @use path to match _variables.scss
+
+* {
+    all: unset; // Important: Unset all default GTK styles
+}
+
+window {
+    background-color: transparent;
+}
+
+.Bar {
+    background: transparent;
+    color: variables.$text-color; // FIXED: Added variables.
+    font-weight: bold;
+
+    > centerbox {
+        background: variables.$primary-bg; // FIXED: Added variables.
+        border-radius: 10px;
+        margin: 8px;
+        padding: 0 10px; // Padding inside the bar
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); // Subtle shadow
+    }
+
+    button {
+        background-color: transparent;
+        border-radius: 8px;
+        padding: 4px 8px;
+        transition: background-color 0.2s ease;
+
+        &:hover {
+            background-color: variables.$surface1; // FIXED: Added variables.
+        }
+    }
+
+    .module-icon {
+        font-family: "Symbols Nerd Font Mono"; // Ensure you have a Nerd Font
+        margin-right: 5px;
+        font-size: 1.1em;
+    }
+}
+
+.workspaces {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: variables.$subtext-color; // FIXED: Added variables.
+
+    .workspace-button {
+        padding: 0 5px;
+        transition: color 0.2s ease, background-color 0.2s ease;
+
+        .workspace-dot {
+            width-request: 8px;   // FIXED: Use width-request
+            height-request: 8px;  // FIXED: Use height-request
+            border-radius: 50%;
+            margin: 0 2px;
+        }
+
+        &.active .workspace-dot {
+            background-color: variables.$active-color; // FIXED: Added variables.
+        }
+
+        &.occupied .workspace-dot {
+            background-color: variables.$text-color; // FIXED: Added variables.
+        }
+
+        &:hover .workspace-dot {
+            background-color: variables.$highlight-color; // FIXED: Added variables.
+        }
+    }
+}
+
+.volume-slider, .mic-slider {
+    min-width: 150px;
+    min-height: 10px; // FIXED: Use min-height
+    background-color: variables.$surface0; // FIXED: Added variables.
+    border-radius: 5px;
+
+    trough {
+        min-height: 10px; // ADDED: min-height to trough
+        background-color: variables.$surface0; // FIXED: Added variables.
+        border-radius: 5px;
+    }
+
+    progress {
+        min-height: 10px; // ADDED: min-height to progress
+        background-color: variables.$accent-color; // FIXED: Added variables.
+        border-radius: 5px;
+    }
+}
+
+.media-player {
+    label {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+.network-module {
+    label {
+        margin-left: 5px;
+    }
+}
